@@ -11,7 +11,7 @@ const Shopify = () => {
                 <div className="container">
                     <div className="platform-head-wrapper">
                         <div className="platform-head-left">
-                            <img src="/images/platform-head-img.png" width={519} height={636} alt=""/>
+                            <img src="../shopify-services-website/images/platform-head-img.png" width={519} height={636} alt=""/>
                         </div>
 
                         <div className="platform-head-right">
@@ -46,7 +46,7 @@ const Shopify = () => {
 
                         {Array.from(Array(8).keys()).map((_, index) =>
                             <div className="platform-brands-item" key={index}>
-                                <img src={`/images/logo-ipsum-black-${index + 1}.svg`} alt=""/>
+                                <img src={`../shopify-services-website/images/logo-ipsum-black-${index + 1}.svg`} alt=""/>
                             </div>
                         )}
                     </div>
@@ -60,7 +60,7 @@ const Shopify = () => {
                         {discoverBrands.map(discoverBrand =>
                             <div className="platform-discover-item" key={discoverBrand.id}>
                                 <img
-                                    src={`/images/discover-brands-${discoverBrand.id}.svg`}
+                                    src={`../shopify-services-website/images/discover-brands-${discoverBrand.id}.svg`}
                                     alt={discoverBrand.title}
                                     width={40}
                                     height={40}
@@ -88,7 +88,7 @@ const Shopify = () => {
                             </p>
                         </div>
                         <div className="platform-development-right">
-                            <img src="/images/platform-development-img.png" width={587} height={402} alt=""/>
+                            <img src="../shopify-services-website/images/platform-development-img.png" width={587} height={402} alt=""/>
                         </div>
                     </div>
                 </div>

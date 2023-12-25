@@ -34,22 +34,22 @@ const Footer = () => {
                         <ul className={classes.footer_social}>
                             <li className={classes.footer_social_item}>
                                 <a href="/" aria-label="linkedin" title="Linkedin" target="_blank">
-                                    <img src="/images/linkeding.svg" width={20} height={20} alt=""/>
+                                    <img src="../shopify-services-website/images/linkeding.svg" width={20} height={20} alt=""/>
                                 </a>
                             </li>
                             <li className={classes.footer_social_item}>
                                 <a href="/" aria-label="instagram" title="Instagram" target="_blank">
-                                    <img src="/images/instagram.svg" width={20} height={20} alt=""/>
+                                    <img src="../shopify-services-website/images/instagram.svg" width={20} height={20} alt=""/>
                                 </a>
                             </li>
                             <li className={classes.footer_social_item}>
                                 <a href="/" aria-label="facebook" title="Facebook" target="_blank">
-                                    <img src="/images/facebook.svg" width={20} height={20} alt=""/>
+                                    <img src="../shopify-services-website/images/facebook.svg" width={20} height={20} alt=""/>
                                 </a>
                             </li>
                             <li className={classes.footer_social_item}>
                                 <a href="/" aria-label="twitter" title="Twitter" target="_blank">
-                                    <img src="/images/twitter.svg" width={20} height={20} alt=""/>
+                                    <img src="../shopify-services-website/images/twitter.svg" width={20} height={20} alt=""/>
                                 </a>
                             </li>
                         </ul>

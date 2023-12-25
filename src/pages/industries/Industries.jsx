@@ -35,7 +35,7 @@ const Industries = () => {
                             </a>
                         </div>
                         <div className="industries-head-right">
-                            <img src="/images/industries-head-img.svg" width={512} height={461} alt=""/>
+                            <img src="../shopify-services-website/images/industries-head-img.svg" width={512} height={461} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -53,12 +53,12 @@ const Industries = () => {
                             </p>
                         </div>
                         <div className="industries-item-img">
-                            <img src="/images/industries-item-1.png" width={540} height={380} alt=""/>
+                            <img src="../shopify-services-website/images/industries-item-1.png" width={540} height={380} alt=""/>
                         </div>
                     </div>
                     <div className="industries-item">
                         <div className="industries-item-img">
-                            <img src="/images/industries-item-2.png" width={540} height={380} alt=""/>
+                            <img src="../shopify-services-website/images/industries-item-2.png" width={540} height={380} alt=""/>
                         </div>
                         <div className="industries-item-content">
                             <h2 className="title">Shopify Apps and Integrations</h2>
@@ -79,7 +79,7 @@ const Industries = () => {
                             </p>
                         </div>
                         <div className="industries-item-img">
-                            <img src="/images/industries-item-3.png" width={540} height={380} alt=""/>
+                            <img src="../shopify-services-website/images/industries-item-3.png" width={540} height={380} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ const Industries = () => {
                         {industriesBenefits.map(industriesBenefitsItem =>
                             <div className="industries-benefits-item" key={industriesBenefitsItem.id}>
                                 <img
-                                    src={`/images/industries-benefits-icon-${industriesBenefitsItem.id}.svg`}
+                                    src={`../shopify-services-website/images/industries-benefits-icon-${industriesBenefitsItem.id}.svg`}
                                     alt={industriesBenefitsItem.title}
                                     height={40}
                                     width={40}

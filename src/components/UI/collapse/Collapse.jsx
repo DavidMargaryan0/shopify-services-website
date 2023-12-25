@@ -19,7 +19,7 @@ const Collapse = (props) => {
             >
                 {question}
 
-                <img src="/images/collapse-arrow.svg" alt="" width={32} height={32}/>
+                <img src="../shopify-services-website/images/collapse-arrow.svg" alt="" width={32} height={32}/>
             </button>
             <div className={collapseBodyClasses.join(' ')}>
                 {children}

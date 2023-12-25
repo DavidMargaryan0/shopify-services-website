@@ -36,17 +36,17 @@ const Process = () => {
                                 provide tailored solutions for your Shopify website.
                             </p>
                             <button type="button" className="btn btn-primary">
-                                <img src="/images/arrow-right-white.svg" width={24} height={24} alt=""/>
+                                <img src="../shopify-services-website/images/arrow-right-white.svg" width={24} height={24} alt=""/>
                                 More About Consultation
                             </button>
                         </div>
                         <div className="process-item-img">
-                            <img src="/images/process-item-1.png" width={454} height={437} alt=""/>
+                            <img src="../shopify-services-website/images/process-item-1.png" width={454} height={437} alt=""/>
                         </div>
                     </div>
                     <div className="process-item">
                         <div className="process-item-img">
-                            <img src="/images/process-item-2.png" width={454} height={437} alt=""/>
+                            <img src="../shopify-services-website/images/process-item-2.png" width={454} height={437} alt=""/>
                         </div>
                         <div className="process-item-content">
                             <strong>Planning & Strategy</strong>
@@ -56,7 +56,7 @@ const Process = () => {
                                 large business.
                             </p>
                             <button type="button" className="btn btn-primary">
-                                <img src="/images/arrow-right-white.svg" width={24} height={24} alt=""/>
+                                <img src="../shopify-services-website/images/arrow-right-white.svg" width={24} height={24} alt=""/>
                                 More About Consultation
                             </button>
                         </div>
@@ -71,7 +71,7 @@ const Process = () => {
                             </p>
                         </div>
                         <div className="process-item-img">
-                            <img src="/images/process-item-3.png" width={454} height={437} alt=""/>
+                            <img src="../shopify-services-website/images/process-item-3.png" width={454} height={437} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ const Process = () => {
                     <div className="process-specializing-wrapper">
                         <div className="process-specializing-left">
                             <div className="process-specializing-item">
-                                <img src="/images/specializing-icon-1.svg" width={32} height={32} alt=""/>
+                                <img src="../shopify-services-website/images/specializing-icon-1.svg" width={32} height={32} alt=""/>
                                 <strong>Custom Design & Development</strong>
                                 <p>
                                     We create a visually stunning and responsive website, incorporating your brand
@@ -94,19 +94,19 @@ const Process = () => {
                                     user experience and maximize conversions.
                                 </p>
                                 <a href="/" className="arrow-link">
-                                    <img src="/images/arrow-right-green.svg" width={24} height={24} alt=""/>
+                                    <img src="../shopify-services-website/images/arrow-right-green.svg" width={24} height={24} alt=""/>
                                     Get in touch
                                 </a>
                             </div>
 
                             <div className="process-specializing-left-img">
-                                <img src="/images/process-specializing-img.png" width={580} height={384} alt=""/>
+                                <img src="../shopify-services-website/images/process-specializing-img.png" width={580} height={384} alt=""/>
                             </div>
                         </div>
                         <div className="process-specializing-right">
                             <div className="process-specializing-right-item">
                                 <div className="process-specializing-item">
-                                    <img src="/images/specializing-icon-2.svg" width={32} height={32} alt=""/>
+                                    <img src="../shopify-services-website/images/specializing-icon-2.svg" width={32} height={32} alt=""/>
                                     <strong>E-commerce Functionality</strong>
                                     <span>Every 2 weeks</span>
                                     <p>
@@ -119,7 +119,7 @@ const Process = () => {
                             </div>
                             <div className="process-specializing-right-item">
                                 <div className="process-specializing-item">
-                                    <img src="/images/specializing-icon-3.svg" width={32} height={32} alt=""/>
+                                    <img src="../shopify-services-website/images/specializing-icon-3.svg" width={32} height={32} alt=""/>
                                     <strong>Launch and Optimization</strong>
                                     <span>Every quarter</span>
                                     <p>
@@ -131,7 +131,7 @@ const Process = () => {
                             </div>
                             <div className="process-specializing-right-item">
                                 <div className="process-specializing-item">
-                                    <img src="/images/specializing-icon-4.svg" width={32} height={32} alt=""/>
+                                    <img src="../shopify-services-website/images/specializing-icon-4.svg" width={32} height={32} alt=""/>
                                     <strong>Ongoing Support and Maintenance</strong>
                                     <span>Continuously</span>
                                     <p>
@@ -162,7 +162,7 @@ const Process = () => {
                             </p>
                         </div>
                         <div className="process-celebrating-right">
-                            <img src="/images/process-celebrating-img.png" width={410} height={446} alt=""/>
+                            <img src="../shopify-services-website/images/process-celebrating-img.png" width={410} height={446} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@ const Process = () => {
 
                             <a href="/" className="arrow-link">
                                 More Information
-                                <img src="/images/arrow-right-green.svg" width={24} height={24} alt=""/>
+                                <img src="../shopify-services-website/images/arrow-right-green.svg" width={24} height={24} alt=""/>
                             </a>
                         </div>
                         <div className="process-evolving-item">
@@ -206,7 +206,7 @@ const Process = () => {
 
                             <a href="/" className="arrow-link">
                                 More Information
-                                <img src="/images/arrow-right-green.svg" width={24} height={24} alt=""/>
+                                <img src="../shopify-services-website/images/arrow-right-green.svg" width={24} height={24} alt=""/>
                             </a>
                         </div>
                     </div>
@@ -228,12 +228,12 @@ const Process = () => {
                         <a href="mailto:Expert@gmail.com">Expert@gmail.com</a>
 
                         <button type="button" className="btn btn-primary-outline">
-                            <img src="/images/arrow-right-white.svg" width={24} height={24} alt=""/>
+                            <img src="../shopify-services-website/images/arrow-right-white.svg" width={24} height={24} alt=""/>
                             Free consultation
                         </button>
                     </div>
                     <div className="process-consultation-right">
-                        <img src="/images/process-consultation-img.png" width={364} height={432} alt=""/>
+                        <img src="../shopify-services-website/images/process-consultation-img.png" width={364} height={432} alt=""/>
                     </div>
                 </div>
             </section>

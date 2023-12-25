@@ -28,7 +28,7 @@ const Services = () => {
                             </p>
                         </div>
                     </div>
-                    <img src="/images/services-head-img.png" width={445} height={445} alt=""/>
+                    <img src="../shopify-services-website/images/services-head-img.png" width={445} height={445} alt=""/>
                 </div>
             </section>
 
@@ -40,7 +40,7 @@ const Services = () => {
                         {ourServices.map(item =>
                             <div className="our-services-item" key={item.id}>
                                 <img
-                                    src={`/images/services-icon-${item.id}.svg`}
+                                    src={`../shopify-services-website/images/services-icon-${item.id}.svg`}
                                     alt={item.title}
                                     width={40}
                                     height={40}

@@ -8,7 +8,7 @@ const ContactUs = () => {
             <section className="contact-head">
                 <div className="container">
                     <h1 className="title">Get in Touch: Contact Us for Exceptional Support and Inquiries</h1>
-                    <img src="/images/contact-head-img.png" width={1440} height={484} alt=""/>
+                    <img src="../shopify-services-website/images/contact-head-img.png" width={1440} height={484} alt=""/>
                 </div>
             </section>
 
@@ -16,7 +16,7 @@ const ContactUs = () => {
                 <div className="container">
                     <div className="contact-info-wrapper">
                         <div className="contact-info-item">
-                            <img src="/images/location.svg" width={40} height={40} alt=""/>
+                            <img src="../shopify-services-website/images/location.svg" width={40} height={40} alt=""/>
                             <h3>Spain</h3>
                             <address>
                                 <span>Address:</span>
@@ -31,7 +31,7 @@ const ContactUs = () => {
                         </div>
 
                         <div className="contact-info-item">
-                            <img src="/images/location.svg" width={40} height={40} alt=""/>
+                            <img src="../shopify-services-website/images/location.svg" width={40} height={40} alt=""/>
                             <h3>Netherlands</h3>
                             <address>
                                 <span>Address:</span>
@@ -63,16 +63,16 @@ const ContactUs = () => {
 
                 <div className="contact-team-social">
                     <a href="/" target="_blank" aria-label="linkedin">
-                        <img src="/images/linkedin-green.svg" width={32} height={32} alt=""/>
+                        <img src="../shopify-services-website/images/linkedin-green.svg" width={32} height={32} alt=""/>
                     </a>
                     <a href="/" target="_blank" aria-label="instagram">
-                        <img src="/images/instagram-green.svg" width={32} height={32} alt=""/>
+                        <img src="../shopify-services-website/images/instagram-green.svg" width={32} height={32} alt=""/>
                     </a>
                     <a href="/" target="_blank" aria-label="facebook">
-                        <img src="/images/facebook-green.svg" width={32} height={32} alt=""/>
+                        <img src="../shopify-services-website/images/facebook-green.svg" width={32} height={32} alt=""/>
                     </a>
                     <a href="/" target="_blank" aria-label="twitter">
-                        <img src="/images/twitter-green.svg" width={32} height={32} alt=""/>
+                        <img src="../shopify-services-website/images/twitter-green.svg" width={32} height={32} alt=""/>
                     </a>
                 </div>
             </SectionBackground>

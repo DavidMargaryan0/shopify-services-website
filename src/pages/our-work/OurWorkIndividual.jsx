@@ -10,7 +10,7 @@ const OurWorkIndividual = () => {
         <>
             <section className="individual-head">
                 <img
-                    src="/images/our-works-individual-img.png"
+                    src="../shopify-services-website/images/our-works-individual-img.png"
                     className="individual-head-img"
                     alt="individual-head-img"
                     width={1920}
@@ -80,14 +80,14 @@ const OurWorkIndividual = () => {
             </section>
 
             <div className="individual-image">
-                <img src="/images/our-works-individual-img-2.png" width={1920} height={640} alt=""/>
+                <img src="../shopify-services-website/images/our-works-individual-img-2.png" width={1920} height={640} alt=""/>
             </div>
 
             <section className="individual-challenge">
                 <div className="container">
                     <div className="individual-challenge-wrapper">
                         <div className="individual-challenge-left">
-                            <img src="/images/our-works-individual-challenge-img.png" width={410} height={446} alt=""/>
+                            <img src="../shopify-services-website/images/our-works-individual-challenge-img.png" width={410} height={446} alt=""/>
                         </div>
                         <div className="individual-challenge-right">
                             <h2 className="title">The Challenge</h2>
@@ -115,7 +115,7 @@ const OurWorkIndividual = () => {
                     <h2 className="title">Testimonials</h2>
 
                     <div className="individual-testimonials-item">
-                        <img src="/images/testimonials.svg" width={32} height={27} alt=""/>
+                        <img src="../shopify-services-website/images/testimonials.svg" width={32} height={27} alt=""/>
                         <strong className="text-secondary font-700">
                             As the project manager overseeing the development of the Healthy Food Shopify Store, I'm
                             proud to say that our team has created a seamless and visually appealing online shopping
@@ -134,37 +134,37 @@ const OurWorkIndividual = () => {
                     <div className="individual-grid-row">
                         <div className="individual-grid-col">
                             <div className="individual-grid-item">
-                                <img src="/images/our-works-individual-grid-1.png" width={590} height={760} alt=""/>
+                                <img src="../shopify-services-website/images/our-works-individual-grid-1.png" width={590} height={760} alt=""/>
                             </div>
                             <div className="individual-grid-item">
-                                <img src="/images/our-works-individual-grid-3.png" width={590} height={760} alt=""/>
+                                <img src="../shopify-services-website/images/our-works-individual-grid-3.png" width={590} height={760} alt=""/>
                             </div>
                         </div>
 
                         <div className="individual-grid-col">
                             <div className="individual-grid-item">
-                                <img src="/images/our-works-individual-grid-2.png" width={590} height={390} alt=""/>
+                                <img src="../shopify-services-website/images/our-works-individual-grid-2.png" width={590} height={390} alt=""/>
                             </div>
 
                             <div className="individual-grid-item">
-                                <img src="/images/our-works-individual-grid-4.png" width={590} height={390} alt=""/>
+                                <img src="../shopify-services-website/images/our-works-individual-grid-4.png" width={590} height={390} alt=""/>
                             </div>
                         </div>
                     </div>
 
                     <div className="individual-grid-item">
-                        <img src="/images/our-works-individual-grid-5.png" width={590} height={760} alt=""/>
+                        <img src="../shopify-services-website/images/our-works-individual-grid-5.png" width={590} height={760} alt=""/>
                     </div>
 
                     <div className="individual-grid-row">
                         <div className="individual-grid-col">
                             <div className="individual-grid-item">
-                                <img src="/images/our-works-individual-grid-6.png" width={590} height={760} alt=""/>
+                                <img src="../shopify-services-website/images/our-works-individual-grid-6.png" width={590} height={760} alt=""/>
                             </div>
                         </div>
                         <div className="individual-grid-col">
                             <div className="individual-grid-item">
-                                <img src="/images/our-works-individual-grid-7.png" width={590} height={760} alt=""/>
+                                <img src="../shopify-services-website/images/our-works-individual-grid-7.png" width={590} height={760} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -199,7 +199,7 @@ const OurWorkIndividual = () => {
                     {ourWorksItems.map(item =>
                         <SwiperSlide key={item.id}>
                             <OurWorksItem
-                                image={`/images/latest-project-${item.id}.png`}
+                                image={`../shopify-services-website/images/latest-project-${item.id}.png`}
                                 className={'individual-latest-project-item'}
                                 description={item.description}
                                 title={item.title}

@@ -25,13 +25,13 @@ const Home = () => {
                                 </button>
 
                                 <button type="button" className="btn text-green">
-                                    <img src="/images/arrow-right-green.svg" width={24} height={24} alt=""/>
+                                    <img src="../shopify-services-website/images/arrow-right-green.svg" width={24} height={24} alt=""/>
                                     Discover our Works
                                 </button>
                             </div>
                         </div>
                         <div className="home-head-right">
-                            <img src="/images/home-head-img.png" width={495} height={531} alt=""/>
+                            <img src="../shopify-services-website/images/home-head-img.png" width={495} height={531} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -42,19 +42,19 @@ const Home = () => {
 
                         <div className="home-head-trusted-wrapper">
                             <div>
-                                <img src="/images/logo-ipsum-1.svg" width={188} height={40} alt="Logo ipsum"/>
+                                <img src="../shopify-services-website/images/logo-ipsum-1.svg" width={188} height={40} alt="Logo ipsum"/>
                             </div>
                             <div>
-                                <img src="/images/logo-ipsum-2.svg" width={192} height={24} alt="Logo ipsum"/>
+                                <img src="../shopify-services-website/images/logo-ipsum-2.svg" width={192} height={24} alt="Logo ipsum"/>
                             </div>
                             <div>
-                                <img src="/images/logo-ipsum-3.svg" width={187} height={35} alt="Logo ipsum"/>
+                                <img src="../shopify-services-website/images/logo-ipsum-3.svg" width={187} height={35} alt="Logo ipsum"/>
                             </div>
                             <div>
-                                <img src="/images/logo-ipsum-4.svg" width={86} height={54} alt="Logo ipsum"/>
+                                <img src="../shopify-services-website/images/logo-ipsum-4.svg" width={86} height={54} alt="Logo ipsum"/>
                             </div>
                             <div>
-                                <img src="/images/logo-ipsum-5.svg" width={188} height={43} alt="Logo ipsum"/>
+                                <img src="../shopify-services-website/images/logo-ipsum-5.svg" width={188} height={43} alt="Logo ipsum"/>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const Home = () => {
                     <div className="home-latest-project-wrapper">
                         {ourWorksItems.slice(0, 3).map(ourWorkItem =>
                             <OurWorksItem
-                                image={`/images/latest-project-${ourWorkItem.id}.png`}
+                                image={`../shopify-services-website/images/latest-project-${ourWorkItem.id}.png`}
                                 className={'home-latest-projects-item'}
                                 description={ourWorkItem.description}
                                 title={ourWorkItem.title}
@@ -120,7 +120,7 @@ const Home = () => {
                                     <SwiperSlide key={ourServicesItem.id}>
                                         <div className="home-services-item">
                                             <img
-                                                src={`/images/services-icon-${ourServicesItem.id}.svg`}
+                                                src={`../shopify-services-website/images/services-icon-${ourServicesItem.id}.svg`}
                                                 className="home-services-item-icon"
                                                 alt={ourServicesItem.title}
                                                 width={40}
@@ -145,7 +145,7 @@ const Home = () => {
                         {testimonials.map(testimonial =>
                             <div className="home-testimonials-item" key={testimonial.id}>
                                 <img
-                                    src="/images/testimonials.svg"
+                                    src="../shopify-services-website/images/testimonials.svg"
                                     alt={testimonial.author}
                                     width={32}
                                     height={20}
@@ -206,12 +206,12 @@ const Home = () => {
                                 store to your specific needs.
                             </p>
                             <button type="button" className="btn btn-primary-outline">
-                                <img src="/images/arrow-right-black.svg" width={13} height={12} alt=""/>
+                                <img src="../shopify-services-website/images/arrow-right-black.svg" width={13} height={12} alt=""/>
                                 About Us
                             </button>
                         </div>
                         <div className="home-ecommerce-img">
-                            <img src="/images/home-ecommerce-img.png" width={570} height={400} alt=""/>
+                            <img src="../shopify-services-website/images/home-ecommerce-img.png" width={570} height={400} alt=""/>
                         </div>
                     </div>
                 </div>

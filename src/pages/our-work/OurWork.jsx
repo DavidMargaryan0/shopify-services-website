@@ -52,7 +52,7 @@ const OurWork = () => {
                 <div className="our-works-wrapper">
                     {filteredCategory.map(ourWorkItem =>
                         <OurWorksItem
-                            image={`/images/latest-project-${ourWorkItem.id}.png`}
+                            image={`../shopify-services-website/images/latest-project-${ourWorkItem.id}.png`}
                             description={ourWorkItem.description}
                             onClick={() => navigate('/our-work/individual')}
                             title={ourWorkItem.title}
