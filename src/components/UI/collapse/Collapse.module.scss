@@ -1,0 +1,61 @@
+.collapse_item {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem 2rem 22px;
+
+    + .collapse_item {
+        margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 1rem 1rem 6px;
+    }
+}
+
+.collapse_btn {
+    background-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: inherit;
+    padding: 0;
+    border: 0;
+
+    img {
+        opacity: 0.6;
+        transform: rotate(180deg);
+        transition: all .3s cubic-bezier(1, 0, 1, 0);
+    }
+
+    &[aria-expanded='true'] {
+        img {
+            opacity: 1;
+            transform: rotate(0);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+.collapse_body {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 10px;
+    transition: all .3s cubic-bezier(0, 1, 0, 1);
+}
+
+.collapse_show {
+    height: auto;
+    max-height: 9999px;
+    transition: all .3s cubic-bezier(1, 0, 1, 0);
+}

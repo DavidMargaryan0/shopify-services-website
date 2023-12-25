@@ -1,0 +1,325 @@
+@import 'mixins';
+
+.platform-head {
+    margin-top: calc(var(--header-height) * -1);
+    background-color: var(--primary);
+    padding: var(--header-height) 0;
+    color: var(--white);
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        border-radius: 50%;
+        filter: blur(257px);
+        opacity: 0.1;
+    }
+
+    &::before {
+        width: 851px;
+        height: 851px;
+        left: -150px;
+        bottom: -100px;
+        background-color: #44A3E2;
+    }
+
+    &::after {
+        width: 822px;
+        height: 822px;
+        right: -150px;
+        top: 50px;
+        background: #DFE244;
+    }
+}
+
+.platform-head-wrapper {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($bp-md) {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+.platform-head-left {
+    max-width: 520px;
+    width: 100%;
+
+    @include breakpoint($bp-md) {
+        display: none;
+    }
+}
+
+.platform-head-right {
+    max-width: 628px;
+    width: 100%;
+
+    strong {
+        font-family: Inter, sans-serif;
+        font-size: 1.125rem;
+        color: var(--green);
+        margin-bottom: 28px;
+        font-weight: 700;
+        display: block;
+    }
+
+    h1 {
+        text-transform: capitalize;
+        margin-bottom: 28px;
+    }
+
+    p {
+        margin-bottom: 28px;
+        font-weight: 500;
+    }
+
+    @include breakpoint($bp-md) {
+        text-align: center;
+        margin: 0 auto;
+
+        strong, h1, p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.platform-brands {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 40px 40px 1rem;
+    margin: 80px 0;
+
+    @include breakpoint($bp-md) {
+        margin: 40px 0;
+        padding: 0;
+    }
+}
+
+.platform-brands-head {
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    max-width: 620px;
+    width: 100%;
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.platform-brands-wrapper {
+    padding-top: 1.5rem;
+    gap: 1.25rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 0;
+        font-weight: 500;
+        width: 100%;
+    }
+}
+
+.platform-brands-item {
+    width: 220px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint($bp-lg) {
+        padding: 1rem;
+    }
+}
+
+.platform-discover {
+    border-radius: var(--radius) var(--radius) 0 0;
+    background-color: var(--primary);
+    padding: 70px 0 120px;
+    color: var(--white);
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    @include breakpoint($bp-md) {
+        padding: 40px 0 60px;
+
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.platform-discover-wrapper {
+    gap: 1.5rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    @include breakpoint($bp-lg) {
+        flex-wrap: wrap;
+    }
+
+    @include breakpoint($bp-md) {
+        flex-direction: column;
+    }
+}
+
+.platform-discover-item {
+    width: calc(25% - 1.125rem);
+    border: 1px solid #3C3C44;
+    border-radius: 20px;
+    padding: 40px;
+
+    img {
+        display: block;
+        max-width: 40px;
+        object-fit: contain;
+        margin-bottom: 28px;
+    }
+
+    strong {
+        display: block;
+        font-size: 1.125rem;
+        margin-bottom: 12px;
+    }
+
+    p {
+        opacity: 0.6;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint($bp-xxl) {
+        padding: 1.5rem;
+    }
+
+    @include breakpoint($bp-lg) {
+        width: calc(50% - 12px);
+    }
+
+    @include breakpoint($bp-md) {
+        width: 100%;
+    }
+}
+
+.platform-development {
+    border-radius: var(--radius) var(--radius) 0 0;
+    background-color: var(--bg-light);
+    padding: 1.25rem 0;
+    margin-top: -40px;
+
+    @include breakpoint($bp-md) {
+        margin-top: -20px;
+        padding: 40px 0;
+    }
+}
+
+.platform-development-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($bp-md) {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+.platform-development-left {
+    padding: 40px 0;
+    max-width: 548px;
+    width: 100%;
+
+    strong {
+        font-family: Inter, sans-serif;
+        font-weight: 700;
+        display: block;
+        color: var(--green);
+        margin-bottom: 1.25rem;
+    }
+
+    h2 {
+        margin-bottom: 1.25rem;
+    }
+
+    @include breakpoint($bp-md) {
+        padding: 0;
+    }
+}
+
+.platform-development-right {
+    max-width: 587px;
+    width: 100%;
+}
+
+.platform-strorefronts {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 64px 60px;
+    margin: 80px 0;
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($bp-lg) {
+        padding: 40px 0;
+    }
+
+    @include breakpoint($bp-md) {
+        flex-direction: column;
+        margin: 40px 0;
+    }
+}
+
+.platform-strorefronts-left, .platform-strorefronts-right {
+    max-width: 508px;
+    width: 100%;
+
+    &:is(.platform-strorefronts-left) {
+        strong {
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            display: block;
+            color: var(--green);
+            margin-bottom: 1.25rem;
+        }
+
+        h2 {
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
+.platform-business-content {
+    h2 {
+        padding: 1rem 0;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 1.25rem;
+    }
+
+    @include breakpoint($bp-md) {
+        h2 {
+            padding: 0;
+        }
+    }
+}

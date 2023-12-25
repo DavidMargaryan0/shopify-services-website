@@ -1,0 +1,28 @@
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
+
+@mixin breakpoint($bp) {
+    @media only screen and (max-width: $bp) {
+        @content;
+    }
+}
+
+@mixin scroll-snap-slider {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 1rem;
+    padding: 0 1rem 1rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    > div {
+        scroll-snap-align: start;
+    }
+}

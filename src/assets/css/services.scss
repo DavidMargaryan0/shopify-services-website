@@ -1,0 +1,215 @@
+@import 'mixins';
+
+body {
+    background-color: var(--bg-light);
+}
+
+.services-head {
+    margin: 20px 0 40px;
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 54px 80px;
+    gap: 48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    justify-content: space-between;
+
+    @include breakpoint($bp-xl) {
+        padding: 2rem;
+    }
+
+    @include breakpoint($bp-lg) {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    @include breakpoint($bp-sm) {
+        padding: 1rem;
+    }
+}
+
+.services-head-content {
+    max-width: 627px;
+    width: 100%;
+
+    h1 {
+        margin-bottom: 28px;
+    }
+
+    @include breakpoint($bp-lg) {
+        h1 {
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
+.services-head-text {
+    color: var(--secondary);
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint($bp-lg) {
+        font-size: 0.875rem;
+    }
+}
+
+.our-services {
+    background-color: var(--primary);
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 72px 0 120px;
+
+    h2 {
+        color: var(--white);
+        margin-bottom: 48px;
+    }
+
+    @include breakpoint($bp-md) {
+        padding: 40px 0 60px;
+
+        h2 {
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+
+.our-services-wrapper {
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-services-item {
+    border: 1px solid #3C3C44;
+    border-radius: 20px;
+    padding: 40px;
+    color: var(--white);
+    width: calc(33.33333% - 1rem);
+
+    strong {
+        display: block;
+        margin: 28px 0 12px;
+        font-size: 1.125rem;
+    }
+
+    p {
+        margin-bottom: 0;
+        opacity: 0.6;
+    }
+
+    @include breakpoint($bp-xl) {
+        padding: 1.5rem;
+    }
+
+    @include breakpoint($bp-md) {
+        width: calc(50% - 12px);
+
+        strong {
+            margin: 1rem 0 12px;
+        }
+    }
+
+    @include breakpoint($bp-sm) {
+        width: 100%;
+    }
+}
+
+.services-empower {
+    background-color: var(--bg-light);
+    border-radius: var(--radius) var(--radius) 0 0;
+    padding: 80px 0;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint($bp-md) {
+        margin-top: -20px;
+        padding: 40px 0;
+    }
+}
+
+.services-empower-text {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        max-width: 920px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    @include breakpoint($bp-md) {
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.services-empower-wrapper {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 120px;
+    counter-reset: item;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    @include breakpoint($bp-lg) {
+        margin-top: 70px;
+        row-gap: 4rem;
+    }
+}
+
+.services-empower-item {
+    width: calc(25% - 18px);
+    position: relative;
+    counter-increment: item;
+    padding: 32px 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+
+    strong {
+        margin-bottom: 1.25rem;
+        font-size: 1.125rem;
+        display: block;
+    }
+
+    &::before {
+        content: counter(item);
+        font-size: 96px;
+        font-weight: 700;
+        color: var(--green);
+        position: absolute;
+        left: -14px;
+        top: -90px;
+        z-index: -1;
+    }
+
+    @include breakpoint($bp-xl) {
+        padding: 1.5rem 1rem;
+    }
+
+    @include breakpoint($bp-lg) {
+        width: calc(50% - 12px);
+    }
+
+    @include breakpoint($bp-sm) {
+        width: 100%;
+
+        &::before {
+            font-size: 4rem;
+            top: -4rem;
+            left: unset;
+            right: 0;
+        }
+    }
+}

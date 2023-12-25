@@ -1,0 +1,270 @@
+@import 'mixins';
+
+.industries-head {
+    margin-top: calc(var(--header-height) * -1);
+    background-color: var(--primary);
+    padding: var(--header-height) 0;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    min-height: 760px;
+}
+
+.industries-head-wrapper {
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($bp-md) {
+        flex-direction: column;
+    }
+}
+
+.industries-head-left {
+    max-width: 628px;
+    width: 100%;
+
+    strong {
+        font-family: Inter, sans-serif;
+        display: block;
+        color: var(--green);
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin-bottom: 28px;
+    }
+
+    h1 {
+        margin-bottom: 28px;
+        padding-right: 2px;
+    }
+
+    p {
+        margin-bottom: 28px;
+    }
+
+    @include breakpoint($bp-md) {
+        text-align: center;
+
+        h1, p, strong {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.industries-head-right {
+    max-width: 512px;
+    width: 100%;
+
+    @include breakpoint($bp-md) {
+        display: none;
+    }
+}
+
+.industries-wrapper {
+    background-color: var(--bg-light);
+    border-radius: var(--radius) var(--radius) 0 0;
+    margin-top: -40px;
+    padding-top: 40px;
+}
+
+.industries-item {
+    padding: 80px 0;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($bp-md) {
+        padding: 0 0 20px;
+    }
+
+    @include breakpoint($bp-sm) {
+        flex-direction: column;
+    }
+}
+
+.industries-item-content {
+    max-width: 628px;
+    width: 100%;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    @include breakpoint($bp-sm) {
+        max-width: none;
+        order: 1;
+    }
+}
+
+.industries-item-img {
+    max-width: 540px;
+    width: 100%;
+
+    @include breakpoint($bp-sm) {
+        max-width: none;
+        order: 2;
+    }
+}
+
+.industries-benefits {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 64px 80px;
+    margin-bottom: 80px;
+
+    @include breakpoint($bp-lg) {
+        padding: 40px 1rem;
+    }
+
+    @include breakpoint($bp-md) {
+        margin-bottom: 40px;
+    }
+}
+
+.industries-benefits-head {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+    h2 {
+        width: 100%;
+        max-width: 702px;
+        margin: 0 auto 1rem;
+    }
+}
+
+.industries-benefits-wrapper {
+    margin-top: 48px;
+    column-gap: 1.5rem;
+    row-gap: 2.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.industries-benefits-item {
+    width: calc(33.33333% - 1rem);
+
+    strong {
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin: 1.25rem 0 0.75rem;
+    }
+
+    @include breakpoint($bp-md) {
+        width: calc(50% - 12px);
+    }
+
+    @include breakpoint($bp-sm) {
+        width: 100%;
+    }
+}
+
+.industries-about {
+    border-radius: var(--radius) var(--radius) 0 0;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 80px 0 120px;
+
+    @include breakpoint($bp-md) {
+        padding: 40px 0 60px;
+    }
+}
+
+.industries-about-wrapper {
+    gap: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include breakpoint($bp-md) {
+        flex-direction: column;
+    }
+}
+
+.industries-about-left {
+    max-width: 588px;
+    width: 100%;
+
+    h2 {
+        margin-bottom: 1.25rem;
+    }
+
+    p {
+        margin-bottom: 0;
+        color: var(--bg-light);
+    }
+
+    @include breakpoint($bp-md) {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.industries-about-right {
+    max-width: 620px;
+    width: 100%;
+}
+
+.industries-questions {
+    background-color: var(--bg-light);
+    border-radius: var(--radius) var(--radius) 0 0;
+    margin-top: -40px;
+    padding: 80px 0;
+
+    @include breakpoint($bp-md) {
+        margin-top: -20px;
+        padding: 40px 0;
+    }
+}
+
+.industries-questions-head {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto 40px;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    @include breakpoint($bp-md) {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.industries-questions-wrapper {
+    max-width: 846px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.industries-contact-wrapper {
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 1.25rem;
+    }
+
+    @include breakpoint($bp-md) {
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
