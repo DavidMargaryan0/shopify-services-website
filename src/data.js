@@ -101,14 +101,10 @@ export const processSteps = [
     },
     {
         id: 6,
-        text: 'Quality Assurance',
-    },
-    {
-        id: 7,
         text: 'Launch & Optimization',
     },
     {
-        id: 8,
+        id: 7,
         text: 'Ongoing Support & Maintenance',
     }
 ];
