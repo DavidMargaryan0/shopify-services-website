@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopify-services-website/static/css/main.5f54f71e.css",
+    "main.css": "/shopify-services-website/static/css/main.071b6181.css",
     "main.js": "/shopify-services-website/static/js/main.2053e011.js",
     "static/media/GeneralSans-VariableItalic.ttf": "/shopify-services-website/static/media/GeneralSans-VariableItalic.37a2c9e4ec944dec5059.ttf",
     "static/media/GeneralSans-Variable.ttf": "/shopify-services-website/static/media/GeneralSans-Variable.d7facbbe2ed9ae4aae49.ttf",
@@ -45,11 +45,11 @@
     "static/media/GeneralSans-ExtralightItalic.woff2": "/shopify-services-website/static/media/GeneralSans-ExtralightItalic.3d55e7e4573d13e89567.woff2",
     "static/media/GeneralSans-Extralight.woff2": "/shopify-services-website/static/media/GeneralSans-Extralight.d6a4332df60f058537bf.woff2",
     "index.html": "/shopify-services-website/index.html",
-    "main.5f54f71e.css.map": "/shopify-services-website/static/css/main.5f54f71e.css.map",
+    "main.071b6181.css.map": "/shopify-services-website/static/css/main.071b6181.css.map",
     "main.2053e011.js.map": "/shopify-services-website/static/js/main.2053e011.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f54f71e.css",
+    "static/css/main.071b6181.css",
     "static/js/main.2053e011.js"
   ]
 }
